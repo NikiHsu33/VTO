@@ -1,0 +1,66 @@
+# 環境變數檔案
+.env
+
+# 資料目錄
+data/
+outputs/
+pretrained_models/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虛擬環境
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 作業系統
+.DS_Store
+Thumbs.db
+
+# 日誌檔案
+*.log
+
+# 臨時檔案
+*.tmp
+*.temp
+
+# Kaggle 相關
+.kaggle/
+kaggle.json
+
+# 模型檔案（太大，不上傳）
+*.safetensors
+*.bin
+*.ckpt
+*.pth
+
+# 資料集檔案
+*.zip
+*.tar.gz
+*.rar

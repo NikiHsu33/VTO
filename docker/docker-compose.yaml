@@ -1,0 +1,21 @@
+services:
+  promptdresser:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: promptdresser
+    volumes:
+      - ../data:/workspace/PromptDresser/DATA
+      - ../outputs:/workspace/PromptDresser/sampled_images
+      - ../pretrained_models:/workspace/PromptDresser/pretrained_models
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
