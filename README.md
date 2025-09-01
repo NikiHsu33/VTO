@@ -52,8 +52,8 @@ make infer
 
 ```python
 # 第一個 cell：克隆專案
-!git clone https://github.com/your-username/promptdresser-vto.git
-%cd promptdresser-vto
+!git clone https://github.com/NikiHsu33/VTO.git
+%cd VTO
 ```
 
 #### 2. 設定環境
